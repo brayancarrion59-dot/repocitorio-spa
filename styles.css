@@ -1,0 +1,59 @@
+/* RESET Y FONDO */
+body, html { margin: 0; padding: 0; overflow-x: hidden; background: #000; }
+
+#bg-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1; /* Mantiene el fondo atrás */
+}
+
+/* CONTENEDOR PRINCIPAL - ARREGLA EL ESPACIO ARRIBA */
+#root {
+    position: relative;
+    z-index: 10;
+    padding-top: 90px; /* Espacio justo para el menú */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* TARJETAS GLASS */
+.glass {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 2.5rem;
+    margin-bottom: 30px;
+    width: 90%;
+    max-width: 1000px;
+    color: white;
+}
+
+/* IMÁGENES DE PROYECTOS DEL MISMO TAMAÑO */
+.project-img-fixed {
+    width: 100%;
+    height: 220px; /* Altura uniforme */
+    object-fit: cover; /* Evita que se estiren */
+    object-position: center;
+    border-radius: 12px;
+}
+
+.profile-img {
+    border: 4px solid #00ff88;
+    box-shadow: 0 0 25px #00ff88;
+}
+
+/* BARRAS DE PROGRESO */
+.progress { background: rgba(255,255,255,0.1); border-radius: 10px; height: 12px; }
+.progress-bar { 
+    background: #00ff88; 
+    width: var(--target-width); 
+    border-radius: 10px;
+    box-shadow: 0 0 10px #00ff88;
+}
