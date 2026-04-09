@@ -1,0 +1,45 @@
+/* Estilos para FocusApp */
+.focus-container {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    color: white;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    padding: 40px;
+}
+
+.timer-circle {
+    width: 250px;
+    height: 250px;
+    border: 8px solid rgba(255,255,255,0.2);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    background: rgba(255,255,255,0.1);
+}
+
+.timer-text {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.btn-focus {
+    background: white;
+    color: #1e3c72;
+    border: none;
+    padding: 15px 50px;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: 0.3s;
+}
+
+.btn-focus:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(255,255,255,0.4);
+}
