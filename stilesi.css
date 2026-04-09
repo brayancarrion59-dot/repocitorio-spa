@@ -1,0 +1,39 @@
+/* Estilos para Café & Libros */
+.cafe-container {
+    background-color: #3e2723; /* Marrón oscuro */
+    color: #efebe9;
+    padding: 50px;
+    border: 8px double #d7ccc8;
+    border-radius: 15px;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    margin-top: 20px;
+}
+
+.cafe-header h1 {
+    font-size: 3.5rem;
+    color: #d7ccc8;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.cafe-img {
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    margin: 20px 0;
+    max-width: 100%;
+}
+
+.btn-cafe {
+    background: transparent;
+    border: 2px solid #d7ccc8;
+    color: #d7ccc8;
+    padding: 10px 30px;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.btn-cafe:hover {
+    background: #d7ccc8;
+    color: #3e2723;
+}
